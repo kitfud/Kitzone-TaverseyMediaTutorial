@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Texturina:wght@300&display=swap');
 :root{
     --primary-color:gold;
+    --secondary-color:lightblue;
+    --dark-color:darkgray;
+    --light-color:lightgray;
 }
 
 *{
@@ -147,4 +150,39 @@ font-size:16px;
 .stats .grid p {
     font-size:20px;
     font-weight:bold;
+}
+
+/*CLI*/
+.cli .grid{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(2,1fr);
+}
+
+.cli .grid > *:first-child{
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+}
+
+/*cloud*/
+.cloud .grid{
+    grid-template-columns: 4fr 3fr;
+}
+
+/*Languages*/
+.languages .flex{
+    flex-wrap: wrap;
+}
+.languages .card{
+text-align:center;
+margin:18px 10px 40px;
+}
+
+.languages .card h4{
+    font-size:20px;
+    margin-bottom:10px;
+    transition:transform 0.2 ease-in;
+}
+
+.languages .card:hover{
+    transform:translateY(-15px);
 }

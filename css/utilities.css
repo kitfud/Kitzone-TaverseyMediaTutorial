@@ -32,6 +32,41 @@
     transform:scale(0.98)
 }
 
+/*backgrounds and colors*/
+.bg-primary,.btn-primary{
+    background-color:var(--primary-color);
+    color:darkblue;
+}
+.bg-secondary,.btn-secondary{
+    background-color:var(--secondary-color);
+    color:darkblue;
+}
+.bg-dark,.btn-dark{
+    background-color:var(--dark-color);
+    color:darkblue;
+}
+.bg-light,.btn-light{
+    background-color:var(--light-color);
+    color:darkblue;
+}
+
+/*text sizes*/
+.lead{
+    font-size:20px;
+}
+.sm{
+    font-size:1rem;
+}
+.md{
+    font-size:2rem;
+}
+.lg{
+    font-size:3rem;
+}
+.xl{
+    font-size:4rem;
+}
+
 .text-center{
     text-align:center;
 }
